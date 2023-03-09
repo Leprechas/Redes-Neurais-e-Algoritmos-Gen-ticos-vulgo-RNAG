@@ -11,15 +11,12 @@ Bom, cada um desses métodos se aplica melhor a tipos de problemas específicos,
 
 Todo experimento terá uma parte padronizada, que eu vou chamar de hipocampo (também é referência de bio), ali conterá todo o meu raciocínio para resolver o experimento e a minha experiência pessoal sobre o experimento em questão.
 
-OBS: esse README vai ser alterado no decorrer da disciplina, não se preocupe.
+# Sumário;
+- Pasta AG - Experimentos;
+-- Experimento A.01: Busca Aleatória
+-- Experimento A.02: Busca em Grade
 
-OBS2: em algum momento vai surgir um sumário dos experimentos e dos seus níveis de dificuldade.
-
-# Template para a disciplina de Redes Neurais e Algoritmos Genéticos
-
-Use este template como base para organizar seus experimentos na disciplina de Redes Neurais e Algoritmos Genéticos. 
-
-Lembretes:
+# Lembretes:
 
 + Cada notebook deve ter apenas um experimento
 + Jamais faça importações utilizando o asterisco. Use espaços de nome ou importe apenas o que for usar no seu experimento
