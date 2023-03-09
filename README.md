@@ -12,8 +12,11 @@ Bom, cada um desses métodos se aplica melhor a tipos de problemas específicos,
 Todo experimento terá uma parte padronizada, que eu vou chamar de hipocampo (também é referência de bio), ali conterá todo o meu raciocínio para resolver o experimento e a minha experiência pessoal sobre o experimento em questão.
 
 # Sumário;
+
 - Pasta AG - Experimentos;
+
 -- Experimento A.01: Busca Aleatória
+
 -- Experimento A.02: Busca em Grade
 
 # Lembretes:
