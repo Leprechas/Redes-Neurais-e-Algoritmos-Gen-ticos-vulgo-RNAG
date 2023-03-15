@@ -6,9 +6,9 @@ Os notebooks estão organizados em partes; Introdução, Reflexões, Objetivo, D
 
 # Sumário;
 
-- AG - Experimentos solos (feitos):
+- AG - Experimentos solo (feitos):
 
--- Exp. Solo GA.02 - performance caixas binarias
+-- Exp. Solo GA.02 - Performance caixas binarias
 
 - AG - Experimentos (feitos);
 
