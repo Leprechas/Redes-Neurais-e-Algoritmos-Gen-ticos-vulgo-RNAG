@@ -6,7 +6,11 @@ Os notebooks estão organizados em partes; Introdução, Reflexões, Objetivo, D
 
 # Sumário;
 
-- Pasta AG - Experimentos feitos;
+- AG - Experimentos solos (feitos):
+
+-- Exp. Solo GA.02 - performance caixas binarias
+
+- AG - Experimentos (feitos);
 
 -- Experimento A.01: Busca Aleatória
 
