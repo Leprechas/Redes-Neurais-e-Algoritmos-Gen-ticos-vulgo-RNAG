@@ -2,7 +2,7 @@
 
 Este repositório vai conter tarefas, experimentos e desafios da disciplina de RNAG da Ilum - Escola de ciência, ministrada pelo professor Daniel Roberto Cassar
  
-Os notebooks estão organizados em partes; Introdução, Reflexões, Objetivo, Descrição do Problema, Área de importações, Código, Conclusão, Hipocampo e por fim o Playground!
+Os notebooks estão organizados em partes; Introdução (opcional), Reflexões(opcional), Objetivo, Descrição do Problema, Área de importações, Código, Conclusão, Hipocampo e por fim o Playground!
 
 # Sumário;
 
@@ -15,3 +15,7 @@ Os notebooks estão organizados em partes; Introdução, Reflexões, Objetivo, D
 -- Experimento A.01: Busca Aleatória
 
 -- Experimento A.02: Busca em Grade
+
+-- Experimento A.03: Algoritmo Genético
+
+-- Experimento A.04: Problema das caixas não-binárias (Com AL e BemG)
