@@ -10,6 +10,8 @@ Os notebooks estão organizados em partes; Introdução (opcional), Reflexões(o
 
 -- Exp. Solo GA.02 - Performance caixas binarias
 
+-- Exp. Solo GA.05 - Palindromos
+
 - AG - Experimentos (feitos);
 
 -- Experimento A.01: Busca Aleatória
