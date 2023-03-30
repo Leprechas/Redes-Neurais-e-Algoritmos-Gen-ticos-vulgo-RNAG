@@ -92,6 +92,7 @@ def individuo_senha(tamanho_senha, letras):
 
     for n in range(tamanho_senha):
         candidato.append(gene_letra(letras))
+
     return candidato
 
 
@@ -162,7 +163,9 @@ def selecao_roleta_max(populacao, fitness):
     Returns:
       População dos indivíduos selecionados.
     """
-    populacao_selecionada = random.choices(populacao, weights=fitness, k=len(populacao))
+    populacao_selecionada = random.choices(
+        populacao, weights=fitness, k=len(populacao)
+    )
     return populacao_selecionada
 
 
@@ -173,7 +176,7 @@ def selecao_torneio_min(populacao, fitness, tamanho_torneio=3):
     minimização.
     Args:
       populacao: população do problema
-      fun_objetivo: função objetivo
+      fitness: lista com o valor da funcao objetivo dos individuos da população
       tamanho_torneio: quantidade de invidiuos que batalham entre si
     Returns:
       Individuos selecionados. Lista com os individuos selecionados com mesmo
@@ -199,7 +202,9 @@ def selecao_torneio_min(populacao, fitness, tamanho_torneio=3):
             if fit < minimo_fitness:
                 selecionado = individuo
                 minimo_fitness = fit
+
         selecionados.append(selecionado)
+
     return selecionados
 
 
@@ -314,6 +319,7 @@ def funcao_objetivo_senha(individuo, senha_verdadeira):
 
     for letra_candidato, letra_oficial in zip(individuo, senha_verdadeira):
         diferenca = diferenca + abs(ord(letra_candidato) - ord(letra_oficial))
+
     return diferenca
 
 
@@ -364,4 +370,5 @@ def funcao_objetivo_pop_senha(populacao, senha_verdadeira):
 
     for individuo in populacao:
         resultado.append(funcao_objetivo_senha(individuo, senha_verdadeira))
+
     return resultado
