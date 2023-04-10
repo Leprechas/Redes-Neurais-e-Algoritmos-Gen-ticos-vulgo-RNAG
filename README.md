@@ -23,3 +23,5 @@ Os notebooks estão organizados em partes; Introdução (opcional), Reflexões(o
 -- Experimento A.04: Problema das caixas não-binárias (Com AL e BemG)
 
 -- Experimento A.05 - Descobrindo a Senha
+
+-- Experimento A.06 - Caixeiro viajante
