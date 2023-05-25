@@ -4,22 +4,4 @@ Este repositório vai conter tarefas, experimentos e desafios da disciplina de R
  
 Os notebooks estão organizados em partes; Introdução (opcional), Reflexões(opcional), Objetivo, Descrição do Problema, Área de importações, Código, Conclusão, Hipocampo e por fim o Playground!
 
-# Sumário;
-
-- AlgoritmosGeneticos - Experimentos (feitos);
-
--- Experimento A.01: Busca Aleatória
-
--- Experimento A.02: Busca em Grade
-
--- Experimento GA.02: Performance caixas binarias
-
--- Experimento A.03: Algoritmo Genético
-
--- Experimento A.04: Problema das caixas não-binárias (Com AL e BemG)
-
--- Experimento A.05: Descobrindo a Senha
-
--- Experimento GA.05: Palindromos
-
--- Experimento A.06: Caixeiro viajante
+Para ver os sumários dos experimentos feitos de RN ou AG, basta entrar nos READMEs das pastas Redes Neurais e Algoritmos Genéticos
