@@ -15,3 +15,7 @@ Recomenda-se seguir a ordem proposta a baixo para estudo das Redes Neurais, afin
 - Experimento R.03: Construindo um grafo automaticamente
 
 - Experimento R.04: Computando gradientes locais 
+
+- Experimento R.05: Finalizando a classe Valor
+
+- Experimento R.06: Redes Neurais Artificiais 
