@@ -18,4 +18,8 @@ Recomenda-se seguir a ordem proposta a baixo para estudo das Redes Neurais, afin
 
 - Experimento R.05: Finalizando a classe Valor
 
-- Experimento R.06: Redes Neurais Artificiais 
+- Experimento R.06: Redes neurais artificiais 
+
+- Experimento R.07: Treinando uma rede neural
+
+- Experimento R.08: Treinando um rede neural com pytorch
