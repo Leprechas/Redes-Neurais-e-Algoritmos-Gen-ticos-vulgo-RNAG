@@ -1,5 +1,6 @@
-import math 
-    
+import math
+
+
 class Valor:
     def __init__(self, data, progenitor=(), operador_mae="", rotulo=""):
         self.data = data
@@ -13,7 +14,7 @@ class Valor:
 
     def __add__(self, outro_valor):
         if not isinstance(outro_valor, Valor):
-            outro_valor  = Valor(outro_valor)
+            outro_valor = Valor(outro_valor)
         data = self.data + outro_valor.data
         progenitor = (self, outro_valor)
         operador_mae = "+"
@@ -26,12 +27,13 @@ class Valor:
         saida.propagar = propagar_adicao
 
         return saida
-    def __radd__(self, outro_valor): #inverte a ordem dos valores
+    
+    def __radd__(self, outro_valor): # outro_valor + self
         return self + outro_valor
 
     def __mul__(self, outro_valor):
         if not isinstance(outro_valor, Valor):
-            outro_valor  = Valor(outro_valor)
+            outro_valor = Valor(outro_valor)
         data = self.data * outro_valor.data
         progenitor = (self, outro_valor)
         operador_mae = "*"
@@ -45,54 +47,54 @@ class Valor:
 
         return saida
     
-    def __rmul__(self, outro_valor):#inverte a ordem dos valores
+    def __rmul__(self, outro_valor): # outro_valor * self
         return self * outro_valor
     
-    def __pow__(self, expoente):
+    def __pow__(self, expoente):  # self ** expoente
         
-        assert isinstance(expoente, (int, float)) #garante que algo aconteça, no caso garantir que expoente seja int ou float
-        
-        data = self.data** expoente
+        assert isinstance(expoente, (int, float))
+
+        data = self.data ** expoente
         progenitor = (self, )
         operador_mae = f"**{expoente}"
         saida = Valor(data, progenitor, operador_mae)
-        
+
         def propagar_exponenciacao():
-            self.grad += saida.grad * expoente * (self.data **(expoente - 1))
+            self.grad += saida.grad * expoente * (self.data ** (expoente - 1))
 
         saida.propagar = propagar_exponenciacao
 
         return saida
     
-    def __truediv__(self, outro_valor):
+    def __truediv__(self, outro_valor): # self / outro_valor
         return self * outro_valor ** (-1)
     
-    def __neg__(self): #negativa o valor
+    def __neg__(self):  # - self
         return self * (-1)
     
-    def __sub__(self, outro_valor):
+    def __sub__(self, outro_valor):  # self - outro_valor
         return self + (-outro_valor)
     
-    def __rsub__(self, outro_valor):
+    def __rsub__(self, outro_valor):  # outro_valor - self
         return self * (-1) + outro_valor
-
+    
     def exp(self):
-        
+
         data = math.exp(self.data)
         progenitor = (self, )
         operador_mae = "exp"
         saida = Valor(data, progenitor, operador_mae)
-        
+
         def propagar_exp():
-            self.grad += saida.grad * derivada_local
-                      
+            self.grad += saida.grad * data
+
         saida.propagar = propagar_exp
-                      
+
         return saida
     
-    def sig(self):
+    def sig(self): 
         return self.exp() / (self.exp() + 1)
-        
+
     def propagar(self):
         pass
 
